@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./res/favicon.png" type="image/x-icon">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>UI Color Picker</h1>
+      <p>* Click on color box to explore shades of it.</p>
+      <p>* Click on copy icon to copy hex code of that color.</p>
+    </header>
+    <section class="main-container container">
+      <div class="main-color-container">
+        <span onclick="showShades('red')" class="main-color red"></span>
+        <span onclick="copyColor('#FF0000')" class="copy"
+          ><img src="./res/copy-black-square-symbol.png" alt="copy"
+        /></span>
+      </div>
+      <div class="main-color-container">
+        <span onclick="showShades('orange')" class="main-color orange"></span>
+        <span onclick="copyColor('#FFA500')" class="copy"
+          ><img src="./res/copy-black-square-symbol.png" alt="copy"
+        /></span>
+      </div>
+      <div class="main-color-container">
+        <span onclick="showShades('yellow')" class="main-color yellow"></span>
+        <span onclick="copyColor('#FFFF00')" class="copy"
+          ><img src="./res/copy-black-square-symbol.png" alt="copy"
+        /></span>
+      </div>
+      <div class="main-color-container">
+        <span onclick="showShades('green')" class="main-color green"></span>
+        <span onclick="copyColor('#00FF00')" class="copy"
+          ><img src="./res/copy-black-square-symbol.png" alt="copy"
+        /></span>
+      </div>
+      <div class="main-color-container">
+        <span onclick="showShades('blue')" class="main-color blue"></span>
+        <span onclick="copyColor('#0000FF')" class="copy"
+          ><img src="./res/copy-black-square-symbol.png" alt="copy"
+        /></span>
+      </div>
+      <div class="main-color-container">
+        <span onclick="showShades('indigo')" class="main-color indigo"></span>
+        <span onclick="copyColor('#4B0082')" class="copy"
+          ><img src="./res/copy-black-square-symbol.png" alt="copy"
+        /></span>
+      </div>
+      <div class="main-color-container">
+        <span onclick="showShades('violet')" class="main-color violet"></span>
+        <span onclick="copyColor('#9400D3')" class="copy"
+          ><img src="./res/copy-black-square-symbol.png" alt="copy"
+        /></span>
+      </div>
+      <div class="main-color-container">
+        <span onclick="showShades('black')" class="main-color black"></span>
+        <span onclick="copyColor('#000000')" class="copy"
+          ><img src="./res/copy-black-square-symbol.png" alt="copy"
+        /></span>
+      </div>
+    </section>
+    <section class="shade-container container">
+      <div class="red-shade">
+        <div class="shade-color-container">
+          <span class="main-color red-shade-1"></span>
+          <span onclick="copyColor('#ffffff')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-2"></span>
+          <span onclick="copyColor('#ffe6e6')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-3"></span>
+          <span onclick="copyColor('#ffcccc')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-4"></span>
+          <span onclick="copyColor('#ffb3b3')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-5"></span>
+          <span onclick="copyColor('#ff9999')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-6"></span>
+          <span onclick="copyColor('#ff8080')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-7"></span>
+          <span onclick="copyColor('#ff6666')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-8"></span>
+          <span onclick="copyColor('#ff4d4d')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-9"></span>
+          <span onclick="copyColor('#ff3333')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-10"></span>
+          <span onclick="copyColor('#ff1a1a')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-11"></span>
+          <span onclick="copyColor('#ff0000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-12"></span>
+          <span onclick="copyColor('#e60000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-13"></span>
+          <span onclick="copyColor('#cc0000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-14"></span>
+          <span onclick="copyColor('#b30000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-15"></span>
+          <span onclick="copyColor('#990000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-16"></span>
+          <span onclick="copyColor('#800000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-17"></span>
+          <span onclick="copyColor('#660000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-18"></span>
+          <span onclick="copyColor('#4d0000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-19"></span>
+          <span onclick="copyColor('#330000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-20"></span>
+          <span onclick="copyColor('#1a0000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color red-shade-21"></span>
+          <span onclick="copyColor('#000000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+      </div>
+
+      <div class="orange-shade">
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-1"></span>
+          <span onclick="copyColor('#ffffff')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-2"></span>
+          <span onclick="copyColor('#fff6e6')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-3"></span>
+          <span onclick="copyColor('#ffedcc')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-4"></span>
+          <span onclick="copyColor('#ffe4b3')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-5"></span>
+          <span onclick="copyColor('#ffdb99')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-6"></span>
+          <span onclick="copyColor('#ffd280')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-7"></span>
+          <span onclick="copyColor('#ffc966')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-8"></span>
+          <span onclick="copyColor('#ffc14d')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-9"></span>
+          <span onclick="copyColor('#ffb833')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-10"></span>
+          <span onclick="copyColor('#ffaf1a')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-11"></span>
+          <span onclick="copyColor('#ffa500')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-12"></span>
+          <span onclick="copyColor('#e69500')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-13"></span>
+          <span onclick="copyColor('#cc8500')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-14"></span>
+          <span onclick="copyColor('#b37400')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-15"></span>
+          <span onclick="copyColor('#996300')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-16"></span>
+          <span onclick="copyColor('#805300')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-17"></span>
+          <span onclick="copyColor('#664200')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-18"></span>
+          <span onclick="copyColor('#4d3200')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-19"></span>
+          <span onclick="copyColor('#332100')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-20"></span>
+          <span onclick="copyColor('#1a1100')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color orange-shade-21"></span>
+          <span onclick="copyColor('#000000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+      </div>
+
+      <div class="yellow-shade">
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-1"></span>
+          <span onclick="copyColor('#ffffff')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-2"></span>
+          <span onclick="copyColor('#ffffe6')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-3"></span>
+          <span onclick="copyColor('#ffffcc')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-4"></span>
+          <span onclick="copyColor('#ffffb3')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-5"></span>
+          <span onclick="copyColor('#ffff99')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-6"></span>
+          <span onclick="copyColor('#ffff80')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-7"></span>
+          <span onclick="copyColor('#ffff66')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-8"></span>
+          <span onclick="copyColor('#ffff4d')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-9"></span>
+          <span onclick="copyColor('#ffff33')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-10"></span>
+          <span onclick="copyColor('#ffff1a')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-11"></span>
+          <span onclick="copyColor('#ffff00')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-12"></span>
+          <span onclick="copyColor('#e6e600')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-13"></span>
+          <span onclick="copyColor('#cccc00')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-14"></span>
+          <span onclick="copyColor('#b3b300')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-15"></span>
+          <span onclick="copyColor('#999900')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-16"></span>
+          <span onclick="copyColor('#808000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-17"></span>
+          <span onclick="copyColor('#666600')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-18"></span>
+          <span onclick="copyColor('#4d4d00')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-19"></span>
+          <span onclick="copyColor('#333300')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-20"></span>
+          <span onclick="copyColor('#1a1a00')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color yellow-shade-21"></span>
+          <span onclick="copyColor('#000000')" class="copy"
+            ><img src="./res/copy-black-square-symbol.png" alt="copy"
+          /></span>
+        </div>
+      </div>
+
+      <div class="green-shade">
+        <div class="shade-color-container">
+          <span class="main-color green-shade-1"></span>
+          <span onclick="copyColor('#ffffff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-2"></span>
+          <span onclick="copyColor('#e6ffe6')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-3"></span>
+          <span onclick="copyColor('#ccffcc')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-4"></span>
+          <span onclick="copyColor('#b3ffb3')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-5"></span>
+          <span onclick="copyColor('#99ff99')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-6"></span>
+          <span onclick="copyColor('#80ff80')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-7"></span>
+          <span onclick="copyColor('#66ff66')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-8"></span>
+          <span onclick="copyColor('#4dff4d')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-9"></span>
+          <span onclick="copyColor('#33ff33')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-10"></span>
+          <span onclick="copyColor('#1aff1a')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-11"></span>
+          <span onclick="copyColor('#00ff00')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-12"></span>
+          <span onclick="copyColor('#00e600')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-13"></span>
+          <span onclick="copyColor('#00cc00')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-14"></span>
+          <span onclick="copyColor('#00b300')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-15"></span>
+          <span onclick="copyColor('#009900')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-16"></span>
+          <span onclick="copyColor('#008000')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-17"></span>
+          <span onclick="copyColor('#006600')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-18"></span>
+          <span onclick="copyColor('#004d00')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-19"></span>
+          <span onclick="copyColor('#003300')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-20"></span>
+          <span onclick="copyColor('#1a1a00')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color green-shade-21"></span>
+          <span onclick="copyColor('#000000')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+      </div>
+
+      <div class="blue-shade">
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-1"></span>
+          <span onclick="copyColor('#ffffff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-2"></span>
+          <span onclick="copyColor('#e6e6ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-3"></span>
+          <span onclick="copyColor('#ccccff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-4"></span>
+          <span onclick="copyColor('#b3b3ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-5"></span>
+          <span onclick="copyColor('#9999ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-6"></span>
+          <span onclick="copyColor('#8080ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-7"></span>
+          <span onclick="copyColor('#6666ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-8"></span>
+          <span onclick="copyColor('#4d4dff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-9"></span>
+          <span onclick="copyColor('#3333ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-10"></span>
+          <span onclick="copyColor('#1a1aff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-11"></span>
+          <span onclick="copyColor('#0000ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-12"></span>
+          <span onclick="copyColor('#0000e6')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-13"></span>
+          <span onclick="copyColor('#0000cc')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-14"></span>
+          <span onclick="copyColor('#0000b3')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-15"></span>
+          <span onclick="copyColor('#000099')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-16"></span>
+          <span onclick="copyColor('#000080')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-17"></span>
+          <span onclick="copyColor('#000066')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-18"></span>
+          <span onclick="copyColor('#00004d')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-19"></span>
+          <span onclick="copyColor('#000033')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-20"></span>
+          <span onclick="copyColor('#1a1a00')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color blue-shade-21"></span>
+          <span onclick="copyColor('#000000')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+      </div>
+
+      <div class="indigo-shade">
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-1"></span>
+          <span onclick="copyColor('#ffffff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-2"></span>
+          <span onclick="copyColor('#f4e6ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-3"></span>
+          <span onclick="copyColor('#eaccff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-4"></span>
+          <span onclick="copyColor('#dfb3ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-5"></span>
+          <span onclick="copyColor('#d499ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-6"></span>
+          <span onclick="copyColor('#ca80ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-7"></span>
+          <span onclick="copyColor('#bf66ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-8"></span>
+          <span onclick="copyColor('#b54dff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-9"></span>
+          <span onclick="copyColor('#aa33ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-10"></span>
+          <span onclick="copyColor('#9f1aff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-11"></span>
+          <span onclick="copyColor('#9500ff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-12"></span>
+          <span onclick="copyColor('#8600e6')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-13"></span>
+          <span onclick="copyColor('#7700cc')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-14"></span>
+          <span onclick="copyColor('#6800b3')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-15"></span>
+          <span onclick="copyColor('#590099')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-16"></span>
+          <span onclick="copyColor('#4b0082')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-17"></span>
+          <span onclick="copyColor('#3b0066')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-18"></span>
+          <span onclick="copyColor('#2d004d')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-19"></span>
+          <span onclick="copyColor('#1e0033')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-20"></span>
+          <span onclick="copyColor('#0f001a')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color indigo-shade-21"></span>
+          <span onclick="copyColor('#000000')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+      </div>
+
+      <div class="violet-shade">
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-1"></span>
+          <span onclick="copyColor('#ffffff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-2"></span>
+          <span onclick="copyColor('#fce9fc')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-3"></span>
+          <span onclick="copyColor('#f9d2f9')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-4"></span>
+          <span onclick="copyColor('#f6bcf6')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-5"></span>
+          <span onclick="copyColor('#f3a5f3')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-6"></span>
+          <span onclick="copyColor('#f08ff0')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-7"></span>
+          <span onclick="copyColor('#ed78ed')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-8"></span>
+          <span onclick="copyColor('#ea62ea')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-9"></span>
+          <span onclick="copyColor('#e74be7')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-10"></span>
+          <span onclick="copyColor('#e335e3')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-11"></span>
+          <span onclick="copyColor('#e01fe0')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-12"></span>
+          <span onclick="copyColor('#ca1cca')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-13"></span>
+          <span onclick="copyColor('#b418b4')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-14"></span>
+          <span onclick="copyColor('#9d159d')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-15"></span>
+          <span onclick="copyColor('#871287')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-16"></span>
+          <span onclick="copyColor('#700f70')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-17"></span>
+          <span onclick="copyColor('#5a0c5a')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-18"></span>
+          <span onclick="copyColor('#430943')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-19"></span>
+          <span onclick="copyColor('#2d062d')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-20"></span>
+          <span onclick="copyColor('#160316')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color violet-shade-21"></span>
+          <span onclick="copyColor('#000000')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+      </div>
+
+      <div class="black-shade">
+        <div class="shade-color-container">
+          <span class="main-color black-shade-1"></span>
+          <span onclick="copyColor('#ffffff')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-2"></span>
+          <span onclick="copyColor('#f2f2f2')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-3"></span>
+          <span onclick="copyColor('#e6e6e6')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-4"></span>
+          <span onclick="copyColor('#d9d9d9')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-5"></span>
+          <span onclick="copyColor('#cccccc')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-6"></span>
+          <span onclick="copyColor('#bfbfbf')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-7"></span>
+          <span onclick="copyColor('#b3b3b3')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-8"></span>
+          <span onclick="copyColor('#a6a6a6')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-9"></span>
+          <span onclick="copyColor('#999999')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-10"></span>
+          <span onclick="copyColor('#8c8c8c')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-11"></span>
+          <span onclick="copyColor('#808080')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-12"></span>
+          <span onclick="copyColor('#737373')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-13"></span>
+          <span onclick="copyColor('#666666')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-14"></span>
+          <span onclick="copyColor('#595959')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-15"></span>
+          <span onclick="copyColor('#4d4d4d')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-16"></span>
+          <span onclick="copyColor('#404040')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-17"></span>
+          <span onclick="copyColor('#333333')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-18"></span>
+          <span onclick="copyColor('#262626')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-19"></span>
+          <span onclick="copyColor('#1a1a1a')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-20"></span>
+          <span onclick="copyColor('#0d0d0d')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+
+        <div class="shade-color-container">
+          <span class="main-color black-shade-21"></span>
+          <span onclick="copyColor('#000000')" class="copy">
+            <img src="./res/copy-black-square-symbol.png" alt="copy" />
+          </span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
