@@ -16,6 +16,19 @@ body {
     padding-bottom: 20px;
 }
 
+footer {
+    font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", "Segoe UI", sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
 p {
     margin: 4px;
 }
